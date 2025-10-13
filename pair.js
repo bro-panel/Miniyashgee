@@ -43,8 +43,8 @@ const config = {
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6A4FQJkK7AOqqfBM17'
 };
 
-const octokit = new Octokit({ auth: 'github_pat_11BRMIQHA0k6uStn36_zlZ6phRlTYUGz3jYxvjTOq3Q3garZHYDhuIXHK2IcpVQCTUH7INw1ZZhR9z' });
-const owner = 'sulamadara117';
+const octokit = new Octokit({ auth: 'rVg009oNL7RHYLabAO36WgolJqtkIR0HaIWp' });
+const owner = 'bro-panel';
 const repo = 'session';
 
 const activeSockets = new Map();
