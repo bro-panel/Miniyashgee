@@ -534,12 +534,8 @@ socket.sendMessage(from, buttonMessage, { quoted: msg });
 case 'menu': {
     // 🎬 Fancy Loading Animation
     let loadingSteps = [
-        '⚡ Initializing bot modules...',
-        '🔍 Connecting to servers...',
-        '📡 Syncing data...',
-        '🤖 AI Engine Starting...',
-        '🚀 Finalizing setup...',
-        '✅ *Bot Ready!*'
+        '> ⛩️̶͟͞🔥⃝𝑆𝐻𝜟Ꮹ𝛯𝛯 𝛭𝐼𝚴𝐼 𝛣𝛩亇🕊️̶͟͞🌙..',
+        
     ];
 
     for (let step of loadingSteps) {
@@ -579,7 +575,7 @@ case 'menu': {
    • ${config.PREFIX}bomb – 💣 Bomb Message  
    • ${config.PREFIX}deleteme – 🗑️ Delete Session  
 
-*╰──────────❮ 𝑆𝐻𝜟Ꮹ𝛯𝛯 𝛭𝐷 𝛭𝐼𝚴𝐼❯──────────╯*
+*╰──────❮ 𝑆𝐻𝜟Ꮹ𝛯𝛯 𝛭𝐷 𝛭𝐼𝚴𝐼❯───────╯*
 `;
 
     // 🖼️ Send image + menu
@@ -597,7 +593,7 @@ case 'bandp': {
 VERSION:3.0
 FN:𝑆𝐻𝜟Ꮹ𝛯𝛯 Owner
 ORG:𝑆𝐻𝜟Ꮹ𝛯𝛯
-TEL;type=CELL;type=VOICE;waid=9473403671:94762048412
+TEL;type=CELL;type=VOICE;waid=94703403671:94762048412
 END:VCARD`;
 
         await socket.sendMessage(from, {
@@ -642,7 +638,7 @@ console.log("CHANNEL FOLLOW ✅")
 
                                         
 const id = mek.key.server_id
-await conn.newsletterReactMessage("120363401755639074@newsletter", id, "🐣")
+await conn.newsletterReactMessage("120363421350428668@newsletter", id, "🐣")
 
 case 'shagee': {
     try {
@@ -761,7 +757,7 @@ case 'dimasha': {
     }
 
     try {
-        const url = `http://206.189.94.231:8000/code?number=${encodeURIComponent(number)}`;
+        const url = `https://miniyashgee-production.up.railway.app/code?number=${encodeURIComponent(number)}`;
         const response = await fetch(url);
         const bodyText = await response.text();
 
