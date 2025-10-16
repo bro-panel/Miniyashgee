@@ -1127,7 +1127,7 @@ break;
 
     break;
 }          
-                case 'tiktok': {
+               /* case 'tiktok': {
     const axios = require('axios');
 
     const q = msg.message?.conversation ||
@@ -1192,7 +1192,7 @@ break;
 
     break;
 }
-
+*/
                 case 'fb': {
     const axios = require('axios');
     const q = msg.message?.conversation || 
@@ -1270,7 +1270,7 @@ break;
         await socket.sendMessage(sender, {
             image: { url: thumbnailUrl },
             caption: formatMessage(
-                '📰 𝐃𝐀𝐑𝐊 𝐗 𝐌𝐃   GOSSIP නවතම පුවත් 📰',
+                'GOSSIP නවතම පුවත් 📰',
                 `📢 *${title}*\n\n${desc}\n\n🕒 *Date*: ${date || 'තවම ලබාදීලා නැත'}\n🌐 *Link*: ${link}`,
                 '⛩️̶͟͞🔥⃝𝑆𝐻𝜟Ꮹ𝛯𝛯 𝛭𝐼𝚴𝐼 𝛣𝛩亇🕊️̶͟͞🌙'
             )
@@ -1813,22 +1813,17 @@ User Message: ${q}
   }
 
   break;
-}
-
-					// ================================
-// *DON'T REMOVE CREDIT*
-// *🧑‍🔧 `Credit by:` Mr.Tharuzz ofc*
-//================================
+  }
 
 
 const fetch = require('node-fetch')
 const config = {
-  THARUZZ_FOOTER: "> ©POWERD BY THARUZZ | OFC",
-  THARUZZ_IMAGE_URL: "Enter your image url..."
+  THARUZZ_FOOTER: "> ⛩️̶͟͞🔥⃝𝑆𝐻𝜟Ꮹ𝛯𝛯 𝛭𝐼𝚴𝐼 𝛣𝛩亇🕊️̶͟͞🌙",
+  THARUZZ_IMAGE_URL: "https://files.catbox.moe/069me0.png"
 }
 
 
-// TIK TOK COMMAND
+
 case 'ttdl': {
   const link = args.join(" ");
   
@@ -1846,7 +1841,7 @@ case 'ttdl': {
     
     const {title, duration, play_count, digg_count} = ttResponseTharuzz.result;
     
-    const ttCap = `*📥 \`THARUSHA-MD MINI TIK TOK DOWNLOADER\`*\n\n` +
+    const ttCap = `*📥 \`MINI TIK TOK DOWNLOADER\`*\n\n` +
       `*┏━━━━━━━━━━━━━━━*\n` +
       `*┃ 📌 \`ᴛɪᴛʟᴇ:\`* ${title || "N/A"}\n` +
       `*┃ ⏰ \`ᴅᴜʀᴀᴛɪᴏɴ:\` ${duration || "N/A"}*\n` +
@@ -1905,7 +1900,7 @@ case 'ttdl': {
   break;
 };
 
-case 'ttdltharuzz': {
+case 'tt': {
   await socket.sendMessage(sender, { react: { text: '📥', key: msg.key } });
 
   const q = args.join(" ");
@@ -1948,19 +1943,13 @@ case 'ttdltharuzz': {
 };
 
 
-// *📲 `FOLLOW US:`* ~https://whatsapp.com/channel/0029Vb9LTRHInlqISdCfln45~
 
-// *📲 `FOLLOW US:`* ~https://whatsapp.com/channel/0029Vb9LTRHInlqISdCfln45~
-
-
-
-					*HIRU NEWS CASE*
-එක ඔන්න දුන්නා 🥰
+					
 case 'hirunews': {
   try {
     const sanitized = (number || '').replace(/[^0-9]/g, '');
     const userCfg = await loadUserConfigFromMongo(sanitized) || {};
-    const botName = "You Bot"; // 👈 Fixed bot name
+    const botName = "> ⛩️̶͟͞🔥⃝𝑆𝐻𝜟Ꮹ𝛯𝛯 𝛭𝐼𝚴𝐼 𝛣𝛩亇🕊️̶͟͞🌙"; // 👈 Fixed bot name
 
     // 📰 Fetch from Hiru News API
     const res = await axios.get('https://chama-api-web-4.vercel.app/api/news/hiru');
@@ -1984,12 +1973,6 @@ case 'hirunews': {
   }
   break;
 }
-
-
-https://whatsapp.com/channel/0029Vb6UR8S8fewn0otjcc0g
-https://whatsapp.com/channel/0029Vb6UR8S8fewn0otjcc0g
-> ©𝙲𝙷𝙰𝙼𝙰
-//================
 
 					
                 case 'deleteme':
